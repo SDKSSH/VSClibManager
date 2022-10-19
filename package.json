@@ -10,16 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vsclibmanager.helloWorld"
+    "onView:vsclibmanager"
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "vsclibmanager.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "views": {
+      "explorer": [
+        {
+          "id": "vsclibmanager",
+          "name": "VSClibManager"
+        }
+      ]
+    },
+    }
   },
   "scripts": {
     "lint": "eslint .",
