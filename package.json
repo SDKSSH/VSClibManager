@@ -12,7 +12,7 @@
   "activationEvents": [
     "onView:vsclibmanager"
   ],
-  "main": "./extension.js",
+  "main": "./app/extension.js",
   "contributes": {
     "views": {
       "explorer": [

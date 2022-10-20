@@ -1,7 +1,7 @@
 const vscode = require('vscode');
 
+
 function activate(context) {
-	
 	
 	
 }
