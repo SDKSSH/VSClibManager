@@ -4,7 +4,7 @@ module.exports =
 
         }
 
-        getExtension(extension){
+        webView(extension){
 
         }
     }

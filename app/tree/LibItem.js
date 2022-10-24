@@ -2,7 +2,7 @@
 const vscode = require("vscode")
 
 module.exports = class LibItem extends vscode.TreeItem{
-    constructor(json, icon) {
+    constructor(json, icon, type) {
         super(json.name, vscode.TreeItemCollapsibleState);
         this.description = json.version;
         this.json = json
@@ -10,11 +10,12 @@ module.exports = class LibItem extends vscode.TreeItem{
             "light" : icon,
             "dark" : icon
         }
+        this.type = type;
     }
 
     command = {
-        command: "extension.openextension",
-        title: "Open Extension",
-        arguments: [this.json]
+        command: "extension.viewlibrary",
+        title: "View Library",
+        arguments: [this.json, this.type]
     }
 }
